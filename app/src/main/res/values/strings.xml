@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SuitmediaTest</string>
+    <string name="name">Enter Your Name</string>
+    <string name="user_name">Name</string>
+    <string name="check">Check Your Word Here</string>
+    <string name="check_palindrome">Check Palindrome</string>
+    <string name="next">Next</string>
+    <string name="retry">Retry</string>
+    <string name="first_name">Firstname</string>
+    <string name="no_data">Data tidak tersedia</string>
+</resources>
