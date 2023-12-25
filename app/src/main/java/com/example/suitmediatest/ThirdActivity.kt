@@ -86,7 +86,7 @@ class ThirdActivity : AppCompatActivity() {
 
         accountAdapter.setOnItemClickCallback(object : AccountAdapter.OnItemClickCallback{
             override fun onItemClicked(data: DataItem) {
-                setResult(Activity.RESULT_OK, intent.putExtra(TAG, "${data.firstName} ${data.lastName}"))
+                setResult(Activity.RESULT_OK, intent.putExtra(TAG_PAGE_THIRD, "${data.firstName} ${data.lastName}"))
                 finish()
 
             }
@@ -94,7 +94,7 @@ class ThirdActivity : AppCompatActivity() {
     }
 
     companion object{
-        private const val TAG = "Thirdkey"
+        const val TAG_PAGE_THIRD = "THIRD PAGE KEY"
     }
 
 

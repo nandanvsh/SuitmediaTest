@@ -18,7 +18,7 @@ class AccountPagingSource(private val apiService: ApiService) : PagingSource<Int
             val position = params.key ?: INITIAL_PAGE_INDEX
 //            val responseData = database.listStoryDao().getAllStory()
 //            return responseData.load(params)
-            val responseData = apiService.getAllUsers( page = position, perPage = params.loadSize)
+            val responseData = apiService.getAllUsers( position, params.loadSize)
             LoadResult.Page(
                 data = responseData.listData,
                 prevKey = if (position == INITIAL_PAGE_INDEX) null else position - 1,
